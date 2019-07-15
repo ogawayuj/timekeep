@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Vue.js App</title>
+  <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <p>{{ message }}</p>
+        <ol>
+            <li v-for="item in list" class="item"> {{item}} </li>
+        </ol>
+    </div>
+    <div id="clock" class="clock">
+        <div class="dials">
+            <div v-for="dial in dials"> {{dial}} </div>
+        </div>
+        <div class="hour hand"></div>
+        <div class="minute hand"></div>
+        <div class="second hand"></div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
